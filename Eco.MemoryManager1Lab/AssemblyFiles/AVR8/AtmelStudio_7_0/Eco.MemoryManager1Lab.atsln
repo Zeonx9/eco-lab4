@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Eco.MemoryManager1Lab", "Eco.MemoryManager1Lab.cproj", "{1185EE8F-0452-4C81-A67C-234CB6ECD24D}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Eco.MemoryManager1LabUnitTest", "Eco.MemoryManager1LabUnitTest.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		StaticDebug|AVR = StaticDebug|AVR
+		StaticRelease|AVR = StaticRelease|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1185EE8F-0452-4C81-A67C-234CB6ECD24D}.StaticDebug|AVR.ActiveCfg = StaticDebug|AVR
+		{1185EE8F-0452-4C81-A67C-234CB6ECD24D}.StaticDebug|AVR.Build.0 = StaticDebug|AVR
+		{1185EE8F-0452-4C81-A67C-234CB6ECD24D}.StaticRelease|AVR.ActiveCfg = StaticRelease|AVR
+		{1185EE8F-0452-4C81-A67C-234CB6ECD24D}.StaticRelease|AVR.Build.0 = StaticRelease|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.StaticDebug|AVR.ActiveCfg = StaticDebug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.StaticDebug|AVR.Build.0 = StaticDebug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.StaticRelease|AVR.ActiveCfg = StaticRelease|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.StaticRelease|AVR.Build.0 = StaticRelease|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

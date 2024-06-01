@@ -1,0 +1,14 @@
+﻿Build started 31.05.2024 16:54:26.
+     1>Project "C:\EcoFramework\Projects\lab4\Eco.Lab4\Eco.MemoryManager1Lab\AssemblyFiles\BCM283x\gcc_7_5_0\Eco.MemoryManager1Lab.vcxproj" on node 2 (build target(s)).
+     1>Build:
+         make
+         C:\toolchain\\gcc-linaro-7.5.0\\bin\\aarch64-elf-ar -rcs ..\\..\\..\\BuildFiles\\BCM283x\\arm64-v8a\\StaticRelease\\lib81589BFED0B84B1194524BEE623E1838.a ..\\..\\..\\SourceFiles\\CEcoMemoryManager1Lab.o ..\\..\\..\\SourceFiles\\CEcoMemoryAllocator1Lab.o ..\\..\\..\\SourceFiles\\CEcoVirtualMemory1Lab.o ..\\..\\..\\SourceFiles\\CEcoMemoryManager1LabFactory.o
+         rm -f ..\\..\\..\\SourceFiles\\CEcoMemoryManager1Lab.o ..\\..\\..\\SourceFiles\\CEcoMemoryAllocator1Lab.o ..\\..\\..\\SourceFiles\\CEcoVirtualMemory1Lab.o ..\\..\\..\\SourceFiles\\CEcoMemoryManager1LabFactory.o
+         process_begin: CreateProcess(NULL, rm -f ..\..\..\SourceFiles\CEcoMemoryManager1Lab.o ..\..\..\SourceFiles\CEcoMemoryAllocator1Lab.o ..\..\..\SourceFiles\CEcoVirtualMemory1Lab.o ..\..\..\SourceFiles\CEcoMemoryManager1LabFactory.o, ...) failed.
+         make (e=2): The system cannot find the file specified.
+         make: [Makefile:57: lib81589BFED0B84B1194524BEE623E1838.a] Error 2 (ignored)
+     1>Done Building Project "C:\EcoFramework\Projects\lab4\Eco.Lab4\Eco.MemoryManager1Lab\AssemblyFiles\BCM283x\gcc_7_5_0\Eco.MemoryManager1Lab.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.09

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{1185ee8f-0452-4c81-a67c-234cb6ecd24d}</ProjectGuid>
+    <avrdevice>ATmega328P</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>StaticLibrary</OutputType>
+    <Language>C</Language>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AvrGccProjectExtensions>
+    </AvrGccProjectExtensions>
+    <AssemblyName>Eco.MemoryManager1Lab</AssemblyName>
+    <Name>Eco.MemoryManager1Lab</Name>
+    <RootNamespace>Eco.MemoryManager1Lab</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'StaticRelease' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.Device>-mmcu=atmega328p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega328p"</avrgcc.common.Device>
+  <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>ECO_LIB</Value>
+      <Value>ECO_AVR8</Value>
+      <Value>UGUID_UTILITY</Value>	  
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../../../Eco.Core1/SharedFiles</Value>
+      <Value>../../../../../Eco.InterfaceBus1/SharedFiles</Value>
+      <Value>../../../../../Eco.MemoryManager1/SharedFiles</Value>
+      <Value>../../../../SharedFiles</Value>
+      <Value>../../../../HeaderFiles</Value>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\include</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\include</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+</AvrGcc>
+    </ToolchainSettings>
+    <OutputFileName>lib81589BFED0B84B1194524BEE623E1838</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <PostBuildEvent>xcopy /f /y "$(MSBuildProjectDirectory)\$(Configuration)\$(OutputFileName)$(OutputFileExtension)" "$(MSBuildProjectDirectory)\..\..\..\BuildFiles\$(Platforms)8\$(Configuration)\"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'StaticDebug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.Device>-mmcu=atmega328p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega328p"</avrgcc.common.Device>
+  <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>ECO_LIB</Value>
+      <Value>UGUID_UTILITY</Value>
+      <Value>ECO_AVR8</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../../../Eco.Core1/SharedFiles</Value>
+      <Value>../../../../../Eco.InterfaceBus1/SharedFiles</Value>
+      <Value>../../../../../Eco.MemoryManager1/SharedFiles</Value>
+      <Value>../../../../SharedFiles</Value>
+      <Value>../../../../HeaderFiles</Value>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\include</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\include</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
+    </ToolchainSettings>
+    <OutputFileName>lib81589BFED0B84B1194524BEE623E1838</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <PostBuildEvent>xcopy /f /y "$(MSBuildProjectDirectory)\$(Configuration)\$(OutputFileName)$(OutputFileExtension)" "$(MSBuildProjectDirectory)\..\..\..\BuildFiles\$(Platforms)8\$(Configuration)\"</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\HeaderFiles\CEcoMemoryManager1Lab.h">
+      <SubType>compile</SubType>
+      <Link>HeaderFiles\CEcoMemoryManager1Lab.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\HeaderFiles\CEcoMemoryManager1LabFactory.h">
+      <SubType>compile</SubType>
+      <Link>HeaderFiles\CEcoMemoryManager1LabFactory.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\SharedFiles\IdEcoMemoryManager1Lab.h">
+      <SubType>compile</SubType>
+      <Link>SharedFiles\IdEcoMemoryManager1Lab.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\SharedFiles\IEcoMemoryManager1Lab.h">
+      <SubType>compile</SubType>
+      <Link>SharedFiles\IEcoMemoryManager1Lab.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\SourceFiles\CEcoMemoryManager1Lab.c">
+      <SubType>compile</SubType>
+      <Link>SourceFiles\CEcoMemoryManager1Lab.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\SourceFiles\CEcoMemoryManager1LabFactory.c">
+      <SubType>compile</SubType>
+      <Link>SourceFiles\CEcoMemoryManager1LabFactory.c</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HeaderFiles" />
+    <Folder Include="SourceFiles" />
+    <Folder Include="SharedFiles" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
